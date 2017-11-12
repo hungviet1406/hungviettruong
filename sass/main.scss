@@ -1,0 +1,144 @@
+@import url(http://fonts.googleapis.com/css?family=Sofadi+One);
+@import url(http://fonts.googleapis.com/css?family=Elsie);
+/* Set fullscreen */
+html, body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* clearfix hack */
+.cf {
+
+    *zoom: 1;
+
+    &::after {
+        clear: both;
+    }
+
+    &::before,
+    &::after {
+        content: " ";
+        display: table;
+    }
+}
+#start_content {
+    max-width: 960px;
+    margin: 100px auto;
+    color: #ffffff;
+    font-size: 3.5em;
+}
+#p_start_content {
+
+    font-size: 2em;
+    background: rgba(231, 76, 60, 0.4);
+    padding: 20px;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    
+}
+.section-1 {
+    height: 100%;
+    font-family: 'Sofadi One', cursive;
+
+    .greeting-content {
+        max-width: 960px;
+        margin: 100px auto;
+        text-align: center;
+        font-family: 'Sofadi One', cursive;
+        h1, h3 {
+            color: #ffffff;
+            font-size: 3.5em;
+        }
+
+        p {
+            font-size: 2em;
+            background: rgba(231, 76, 60, 0.4);
+            padding: 20px;
+            border-radius: 30px;
+            -moz-border-radius: 30px;
+            -webkit-border-radius: 30px;
+
+            a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.quotes {
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    font-style: italic;
+    color: #fff;
+    width: 500px;
+    margin: 30px;
+    padding: 15px;
+}
+
+.section-2 {
+    position: relative;
+    height: 800px;
+    background: url('../img/londoncity.jpg') no-repeat 50% 0 fixed;
+    font-family: 'Elsie', cursive;
+    overflow: hidden;
+
+    #sherlock-img {
+        margin: 0 auto;
+        z-index: 200;
+        position: absolute;
+        right: 50px;
+    }
+
+    .sherlock {
+        background: rgba(192, 57, 43, 0.8);
+        position: absolute;
+        z-index: 100;
+        left: 100px;
+        width: 600px;
+        font-size: 18px;
+    }
+}
+
+.section-3 {
+    position: relative;
+    height: 900px;
+    background: url('../img/appleinc.jpg') no-repeat 50% 0 fixed;
+    font-family: 'Elsie', cursive;
+    overflow: hidden;
+
+    #steve-img {
+        margin: 0 auto;
+        z-index: 200;
+        position: absolute;
+        right: 0px;
+    }
+
+    .steve {
+        font-size: 1em;
+        background: rgba(44, 62, 80, 0.8);
+        position: absolute;
+        z-index: 100;
+        left: 50px;
+        width: 600px;
+        font-size: 20px;
+    }
+}
